@@ -1,0 +1,18 @@
+
+# Activar RewriteEngine
+RewriteEngine on
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  index
+#   Salida: index.php?controller=index
+RewriteRule ^index/?$ index.php?controller=index
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  not_found
+#   Salida: index.php?controller=not_found
+RewriteRule ^not_found/?$ index.php?controller=not_found
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  galery
+#   Salida: index.php?controller=galery
+RewriteRule ^galery/?$ index.php?controller=galery
